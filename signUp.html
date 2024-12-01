@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign</title>
+
+    <!-- ========== Start Font Awesome ========== -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- ========== End Font Awesome ========== -->
+
+    <!-- ========== Start main Bootstrap ========== -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- ========== End main Bootstrap ========== -->
+
+    <!-- ========== Start Main Css ========== -->
+    <link rel="stylesheet" href="./CSS/signUp.css" />
+    <!-- ========== End Main Css ========== -->
+  </head>
+  <body>
+    <section>
+      <h1 class="mb-4">Smart Login System</h1>
+      <div class="form">
+        <div class="mb-3">
+          <input
+            oninput="validationInputs(this , 'msgName' )"
+            type="text"
+            class="form-control shadow-none"
+            id="signName"
+            placeholder="Enter your name"
+          />
+          <p id="msgName" class="alert alert-info mt-1 d-none">
+            <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+            "Please ensure your input starts with an uppercase letter, contains
+            only alphanumeric characters.
+          </p>
+        </div>
+        <div class="mb-3">
+          <input
+            oninput="validationInputs(this , 'msgEmail' )"
+            type="email"
+            class="form-control shadow-none"
+            id="signEmail"
+            placeholder="Enter your email"
+          />
+          <p id="msgEmail" class="alert alert-info mt-1 d-none">
+            <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+            Enter a valid email address with alphanumeric characters, dots, or
+            hyphens, followed by '@', a domain, and a 2-4 character top-level
+            domain (e.g., example@mail.com)."
+          </p>
+        </div>
+        <div class="mb-3">
+          <input
+            oninput="validationInputs(this , 'msgPassword' )"
+            type="password"
+            class="form-control shadow-none"
+            id="signPassword"
+            placeholder="Enter your password"
+          />
+          <p id="msgPassword" class="alert alert-info mt-1 d-none">
+            <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+            Password must be at least 8 characters long, include at least one
+            letter, and contain at least one digit.
+          </p>
+        </div>
+        <p id="extistsEmail" class="d-none text-danger">email already exists</p>
+        <p id="success" class="d-none text-success">Success</p>
+
+        <button id="addValue" class="btn btn-outline-info w-100 my-3">
+          sign Up
+        </button>
+
+        <p class="text-white">
+          Don’t have an account?
+          <a id="Signin" class="text-white" href="./index.html">Signin</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="./JS/signUp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+main {
+    background-color: #24353F;
+}
+.navbar {
+    background-color: #24353F;
+    width: 100%;
+
+}
+.navbar div {
+    width: 80%;
+    height: 50px;
+}
+
+.welcome-massage {
+    width: 60%;
+    height: 150px;
+}
+.navbar , 
+.welcome-massage {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff !important;
+}
+h1 {
+    color: #17A2B8;
+}

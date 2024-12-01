@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- ========== Start main Bootstrap ========== -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- ========== End main Bootstrap ========== -->
+
+    <!-- ========== Start Main Css ========== -->
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <!-- ========== End Main Css ========== -->
+  </head>
+  <body>
+    <section>
+      <h1 class="mb-4">Smart Login System</h1>
+      <div class="form">
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control shadow-none"
+            id="loginEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-control shadow-none"
+            id="loginPassword"
+            placeholder="Enter your password"
+          />
+        </div>
+        <p id="incorrect" class="d-none text-danger">incorrect Email or password</p>
+        <p id="inputsRequired" class="d-none text-danger">All inputs are required</p>
+
+        <button id="btnLogin" class="btn btn-outline-info w-100 my-3">
+          Login
+        </button>
+
+        <p class="text-white">
+          Don’t have an account?
+          <a id="SignUp" class="text-white" href="./signUp.html">Sign Up</a>
+        </p>
+      </div>
+    </section>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  background-color: #24353f;
+}
+
+section {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 40px;
+  margin-top: 20px;
+  background-color: #24353f;
+  color: #17a2b8;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+section input {
+  background-color: #24353f !important;
+  border: 1px solid #ced4da;
+  color: #fff !important;
+}
+
+section input::placeholder{
+    color: #ced4da !important;
+}
+
+section button:hover{
+    color: #fff !important;
+}
+
+section a{
+    text-decoration: none;
+}
+section a:hover{
+    text-decoration: underline;
+}
